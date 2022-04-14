@@ -442,7 +442,7 @@ function(vcpkg_find_acquire_program VAR)
     elseif(CMAKE_HOST_WIN32)
       if(NOT EXISTS "${PKGCONFIG}")
         set(VERSION 0.29.2-2)
-        set(LIBWINPTHREAD_VERSION git-8.0.0.5906.c9a21571-1)
+        set(LIBWINPTHREAD_VERSION git-8.0.0.6001.98dad1fe-3)
         vcpkg_acquire_msys(
           PKGCONFIG_ROOT
           NO_DEFAULT_PACKAGES
@@ -450,7 +450,7 @@ function(vcpkg_find_acquire_program VAR)
             "https://repo.msys2.org/mingw/i686/mingw-w64-i686-pkg-config-${VERSION}-any.pkg.tar.zst"
             54f8dad3b1a36a4515db47825a3214fbd2bd82f604aec72e7fb8d79068095fda3c836fb2296acd308522d6e12ce15f69e0c26dcf4eb0681fd105d057d912cdb7
             "https://repo.msys2.org/mingw/i686/mingw-w64-i686-libwinpthread-${LIBWINPTHREAD_VERSION}-any.pkg.tar.zst"
-            2c3d9e6b2eee6a4c16fd69ddfadb6e2dc7f31156627d85845c523ac85e5c585d4cfa978659b1fe2ec823d44ef57bc2b92a6127618ff1a8d7505458b794f3f01c
+            d1350b3a523d96cf49b4086e59da28356f6d4be8d1c1b75c2bc7adb21cdba847a0431ef389bfde241e7c75882be5fe82d53e52229cbee862d938f2c7f712b7c1
         )
       endif()
       set(${VAR} "${PKGCONFIG_ROOT}/mingw32/bin/pkg-config.exe" PARENT_SCOPE)
