@@ -188,8 +188,8 @@ function(vcpkg_acquire_msys PATH_TO_ROOT_OUT)
         DEPS msys2-runtime
     )
     msys_package(
-        URL "https://repo.msys2.org/msys/x86_64/binutils-2.34-4-x86_64.pkg.tar.zst"
-        SHA512 5271288d11489879082bc1f2298bb8bedbcfcf6ee19f8a9b3b552b6a4395543d9385bb833e3c32b1560bff1b411d2be503e2c12a7201bf37b85cfacc5f5baba3
+        URL "https://repo.msys2.org/msys/x86_64/binutils-2.35-1-x86_64.pkg.tar.zst"
+        SHA512 7e67364a6235156e77f07edc67dba48f789c4822d7eef041b7475fbfb0d589bf7c46c39b78fbea07e5183688e802ef6ed2a0fe2481a8af5b6ea3cab907da5a90
         DEPS libiconv libintl
     )
     msys_package(
@@ -356,8 +356,8 @@ function(vcpkg_acquire_msys PATH_TO_ROOT_OUT)
         DEPS msys2-runtime
     )
     msys_package(
-        URL "https://repo.msys2.org/msys/x86_64/msys2-runtime-3.1.6-3-x86_64.pkg.tar.xz"
-        SHA512 f094a7f4926195ef7ba015f0c5c56587b1faa94d85530f07aaaa5557a1494c3bd75257d4687c8401cbf1328d23e5586a92b05f0a872caebb1a7e941a07829776
+        URL "https://repo.msys2.org/msys/x86_64/msys2-runtime-3.1.7-2-x86_64.pkg.tar.xz"
+        SHA512 6eeb8d44ffadbe37e3d92e86f876df3cae73f09e0df393ff6ced81dcd1e079c0f55952246120f89601c7ec6791745e160e675b54d52b0374ebe6e5f41a7f8ef0
     )
 
     msys_package(
