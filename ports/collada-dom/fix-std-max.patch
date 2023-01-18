@@ -1,0 +1,21 @@
+diff --git a/dom/src/dae/daeElement.cpp b/dom/src/dae/daeElement.cpp
+index ca70d4d..50c376d 100644
+--- a/dom/src/dae/daeElement.cpp
++++ b/dom/src/dae/daeElement.cpp
+@@ -20,6 +20,7 @@
+ 
+ #include <limits>
+ #include <iomanip>
++#include <algorithm>
+ 
+ using namespace std;
+ 
+@@ -468,7 +469,7 @@ int getNecessaryColumnWidth(const vector<string>& tokens) {
+     int result = 0;
+     for (size_t i = 0; i < tokens.size(); i++) {
+         int tokenLength = int(tokens[i].length() > 0 ? tokens[i].length()+2 : 0);
+-        result = max(tokenLength, result);
++        result = std::max(tokenLength, result);
+     }
+     return result;
+ }

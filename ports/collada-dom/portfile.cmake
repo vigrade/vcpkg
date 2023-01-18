@@ -9,6 +9,7 @@ vcpkg_from_github(
         use-uriparser.patch
         use-vcpkg-minizip.patch
         fix-shared-keyword.patch
+        fix-std-max.patch
 )
 
 vcpkg_configure_cmake(
